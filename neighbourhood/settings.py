@@ -43,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'cloudinary',
     'hood.apps.HoodConfig',
-    'tinymce'
+    'tinymce',
+    'bootstrap3'
 
 ]
 
