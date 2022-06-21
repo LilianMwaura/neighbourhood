@@ -44,8 +44,7 @@ INSTALLED_APPS = [
     'cloudinary',
     'hood.apps.HoodConfig',
     'tinymce',
-    'bootstrap3'
-
+    'bootstrap3',
 ]
 
 MIDDLEWARE = [
@@ -90,7 +89,11 @@ DATABASES = {
         'PASSWORD': '1234'
     }
 }
-
+cloudinary.config( 
+  cloud_name = "wambui", 
+  api_key = "824351776517753", 
+  api_secret = "bNqxpHAJwFY-im5zSlnm8FVodXY" 
+)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -124,10 +127,12 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
+# https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-STATIC_URL = 'static/'
-
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
