@@ -125,7 +125,7 @@ class Post(models.Model):
         """
         A method that gets a post using the given id
         """   
-        post = Post.objects.filter(id=neighbourhood_id)
+        post = Post.objects.filter(id=neighborhood_id)
         return post     
     
 # Authority Model 
