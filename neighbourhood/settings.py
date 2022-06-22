@@ -137,6 +137,6 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-CSRF_TRUSTED_ORIGINS = ['https://wambui-neighbourhood01.herokuapp.com/']
+CSRF_TRUSTED_ORIGINS = ['https://wambui-neighbourhood01.herokuapp.com']
 import django_heroku
 django_heroku.settings(locals())
