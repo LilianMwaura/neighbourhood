@@ -12,7 +12,14 @@ body {
 p,
 form,
 ::placeholder {
-    font-family: 'Source Sans Pro';
+    font-family: 'Poppins', sans-serif;
+    font-size: smaller;
+    color: #716F81;
+    font-weight: 600;
+}
+
+p{
+    font-family: 'Poppins', sans-serif;
     font-size: smaller;
     color: #716F81;
     font-weight: 600;
