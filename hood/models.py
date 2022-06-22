@@ -44,8 +44,15 @@ class NeighbourHood(models.Model):
         A method that updates a neighbourhood
         """
         neighbourhood = cls.objects.filter(id=id).update(id=id)
-        return neighbourhood       
+        return neighbourhood  
 
+    @classmethod    
+    def update_occupants(cls, id):
+        """
+        A method that updates a neighbourhood
+        """    
+        neighbourhood = cls.objects.filter(id=id).update(id=id)
+        return neighbourhood  
 # Profile Model
     
 class Profile(models.Model):
